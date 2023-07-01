@@ -1,5 +1,5 @@
 .container {
-    max-width: 800px;
+    max-width: 1366px;
     margin: 0 auto;
     width: 96%;
 }
@@ -46,7 +46,7 @@
 }
 
 .container__main {
-    max-width: 800px;
+    max-width: 1366px;
     margin: 0 auto;
     width: 96%;
 }
@@ -64,7 +64,7 @@
 
 .menu__right {
     width: 75%;
-    font-size: large;
+    font-size: medium;
 }
 
 .incoming__icon,
@@ -110,12 +110,226 @@
 
 .ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px 10px 30px;
-    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.letter {
+    margin: 0;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fa-paperclip {
+    margin-left: 10px;
+}
+
+.fa-star {
+    margin-right: 10px;
+    transition: .3s;
+} 
+
+.Letter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Name {
+    display: flex;
+    white-space: nowrap;
+    margin-right: 50px;
+    max-width: 124px;
+    width: 100%;
+}
+
+.Data {
+    display: flex;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.letteR {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.group {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+.left {
+    margin: 0;
+}
+
+
+@media (min-width:1920px) {
+    .container {
+        max-width: 1920px;
+    }
+
+    .container__main {
+        max-width: 1920px;
+    }
+
+    .group {
+        max-width: 1120px;
+    }
+} 
+
+@media (min-width:1024px) and (max-width:1366px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .container__main {
+        max-width: 1024px;
+    }
+
+    .group {
+        max-width: 474px;
+    }    
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .container__main {
+        max-width: 768px;
+    }
+
+    .group {
+        max-width: 289px;
+    }    
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .li {
+        display: block;
+    }
+
+    .container {
+        max-width: 576px;
+    }
+
+    .container__main {
+        max-width: 576px;
+    }
+
+    .group {
+        max-width: 352px;
+        display: block;
+    }
+
+    .Letter {
+        width: auto;
+        margin-left: 28px;
+    }
+
+    .Data {
+        margin-left: 28px;
+    }
+
+    .incoming,
+    .outgoing,
+    .drafts,
+    .spam {
+        padding: 10px;
+    }
+}
+
+@media (max-width:576px) and (min-width:320px) {
+    .li {
+        display: block;
+    }
+
+    .container {
+        max-width: 320px;
+    }
+
+    .container__main {
+        max-width: 320px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .incoming__icon,
+    .outgoing__icon,
+    .drafts__icon,
+    .spam__icon {
+        margin: 0;
+    }
+
+    .incoming,
+    .outgoing,
+    .drafts,
+    .spam {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__left {
+        font-size: medium;
+    }
+
+    .header__right {
+        font-size: medium;
+    }
+
+    .left-t {
+        margin: 0;
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+
+    .header__left__icon,
+    .header__right__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-mail {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+
+    .Letter {
+        width: auto;
+        margin-left: 28px;
+    }
+
+    .Data {
+        margin-left: 28px;
+    }
+
+    .group {
+        max-width: 167px;
+        display: block;
+    }
 }
